@@ -1,0 +1,20 @@
+body{
+ color: aliceblue;
+}
+button{
+    float:right;
+}
+h1{
+    font-size: 30px;
+}
+canvas{
+    border: 5px darkgray solid;
+    border-radius: 25px;
+    box-shadow: 50px 50px 300px black;   
+    margin-top:75px;
+}
+label{
+    border: 0px white;
+    border-radius: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,11 @@
+h1{
+ padding-bottom:50px;
+ padding-top:40px;
+}
+body{
+    background-size: cover;
+}
+a{
+    border: 2px solid purple;
+    border-radius: 20px;
+}

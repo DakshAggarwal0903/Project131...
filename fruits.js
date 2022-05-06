@@ -20,6 +20,12 @@ function draw(){
         for(i=0;i<Zaarray.length;i++){
         document.getElementById("stast").innerHTML="Object is Detected";
         document.getElementById("noofobj").innerHTML="The number of objects is: "+Zaarray.length;
+        c=floor(Zaarray[i].confidence*100)
+        fill('Red');
+        stroke('red')
+        noFill();
+        text(Zaarray[i].label+" "+c+"%",Zaarray[i].x+5,Zaarray[i].y+15);
+        rect(Zaarray[i].x,Zaarray[i].y,Zaarray[i].width,Zaarray[i].height);
         }
     }
 }
@@ -29,5 +35,6 @@ function Theerror(error,results){
     }
     else{
         console.log(results)
+        Zaarray=results;
     }
 }

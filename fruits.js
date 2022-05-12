@@ -4,7 +4,7 @@ function preload(){
     imagee=createImg('fruitbasket.jpg');
 }
 function setup(){
-    canvas=createCanvas(480,380);
+    canvas=createCanvas(900,600);
     canvas.center();
     imagee.hide();
     a=ml5.objectDetector('cocossd',ml5Loaded);
@@ -14,7 +14,7 @@ function ml5Loaded(){
     Zastatus=true;
 }
 function draw(){
-    image(imagee,0,0,480,380);
+    image(imagee,0,0,900,600);
     if(Zastatus != ""){
         a.detect(imagee,Theerror);
         for(i=0;i<Zaarray.length;i++){
